@@ -10,6 +10,7 @@
 	import { marked } from 'marked';
 	import { getModalStore } from '@skeletonlabs/skeleton';
 	import { fly } from 'svelte/transition';
+	import { expoOut } from 'svelte/easing';
 
 	export let currentDisplayedMechanic: Mechanic;
 	export let setSidePanelState: (a: 'hidden' | 'split' | 'full') => void;
@@ -116,7 +117,7 @@
 				</button>
 				{#each $pinnedMechanics as mechanic, i}
 					<button
-						transition:fly={{ x: 25, duration: 50 }}
+						transition:fly={{ x: 25, duration: 300, easing: expoOut }}
 						class="aspect-square rounded-lg border p-1 text-center text-white transition-all"
 						style="border-color: {mechanicColors[mechanic.category]} !important"
 						style:background-color={currentDisplayedMechanic.symbol == mechanic.symbol
