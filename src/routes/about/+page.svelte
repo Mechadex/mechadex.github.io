@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '$lib/Components/Icon.svelte';
 	import YoutubeIcon from '~icons/logos/youtube-icon';
+	import ChevronDoubleLeftIcon from '~icons/mdi/chevron-double-left';
 	import { getDrawerStore } from '@skeletonlabs/skeleton';
 	import { onMount } from 'svelte';
 
@@ -69,12 +70,33 @@
 				><u class="!decoration-primary-500 !decoration-2 !underline-offset-2">game mechanics</u></a
 			>, primarily those of video games. They're organised into 22 categories and are all
 			searchable. Anyone can contribute to this database (see <i>Contributing a Mechanic</i>).
+			<br /><br />A quick rundown of the features:
 		</p>
+		<ul class="text-on-surface-token marker:text-primary-500">
+			<li>
+				Search for mechanics based on fuzzy terms. You can search for stuff like "immersion in
+				cutscenes" or "Sekiro" or "Dice throw". Anything.
+			</li>
+			<li>
+				Vew mechanic details while browsing. The side panel shows you mechanic content. Expand it
+				with the double left chevron button: (<ChevronDoubleLeftIcon
+					class="inline-block text-xl text-primary-500"
+				></ChevronDoubleLeftIcon>)
+			</li>
+			<li>
+				The expanded view lets you read the content better. Close it with the same chevron button.
+			</li>
+			<li>
+				Pin mechanics with the pin button. That keeps the mechanics saved until you close Mechadex.
+				You can navigate to a pinned mechanic by clicking on it.
+			</li>
+		</ul>
+
 		<p>
 			The idea is that when you're stuck on a design problem, you can come here for inspiration, and
 			to see what other designers did, how they solved it, and how well it worked.
 		</p>
-		<h2 class="h2 text-primary-500">This Is Very Scrappy</h2>
+		<h2 class="h2 text-primary-500">Regarding Scrappiness</h2>
 		<p>
 			This project was made in a weekend by an absolute amateur, then worked on a little more over
 			the course of three days. It's very minimal for now. This is not the final product. Please
@@ -90,7 +112,7 @@
 		<p>You can see which ones are AI-generated with the this icon in the bottom-right corner:</p>
 
 		<div class="variant-ghost-surface inline-block aspect-square place-items-center rounded-lg p-2">
-			<HammerWrenchIcon class="ext-lg"></HammerWrenchIcon>
+			<HammerWrenchIcon class="text-lg"></HammerWrenchIcon>
 		</div>
 		<p>
 			These will be slowly phased out for human-written content. In the mean time, if you'd like to
@@ -98,14 +120,15 @@
 		</p>
 		<h2 class="h2 text-primary-500">Contributing a Mechanic</h2>
 		<p>
-			The entire database is stored in a Github repository. That's also why everything loads so
-			slowly. Plans will eventually be made to move to better infrastructure.
-		</p>
-		<p>
 			You can learn how to contribute <a href="/contribute" class="!text-on-surface-token"
 				><u class="!decoration-primary-500 !decoration-2 !underline-offset-2">here</u></a
 			>
 			.
+		</p>
+		<h2 class="h2 text-primary-500">Aaah! The animations!</h2>
+		<p>
+			Yeah, sorry, they might be a bit much. Turn them off using your browser's or your system's
+			Reduced Animation accessibility setting.
 		</p>
 	</article>
 </div>
