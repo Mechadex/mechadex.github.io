@@ -1,7 +1,7 @@
 // You can also use the generator at https://skeleton.dev/docs/generator to create these values for you
 import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
-export const mechdex_theme: CustomThemeConfig = {
-	name: 'mechdex_theme',
+export const mechadex_theme: CustomThemeConfig = {
+	name: 'mechadex_theme',
 	properties: {
 		// =~= Theme Properties =~=
 		"--theme-font-family-base": "system-ui",

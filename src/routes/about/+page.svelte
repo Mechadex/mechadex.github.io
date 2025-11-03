@@ -61,9 +61,9 @@
 			>
 		</p>
 
-		<h2 class="h2 text-primary-500">Using Mechdex</h2>
+		<h2 class="h2 text-primary-500">Using Mechadex</h2>
 		<p>
-			Mechdex is short for "mechanics index". It organizes modular, atomic <a
+			Mechadex is short for "mechanics index". It organizes modular, atomic <a
 				href="https://wikipedia.org/wiki/Game_mechanics"
 				class="!text-on-surface-token"
 				><u class="!decoration-primary-500 !decoration-2 !underline-offset-2">game mechanics</u></a

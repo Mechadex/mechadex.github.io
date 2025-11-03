@@ -1,8 +1,8 @@
 
 import type { CustomThemeConfig } from '@skeletonlabs/tw-plugin';
 
-export const mechdexTheme: CustomThemeConfig = {
-    name: 'mechdex-theme',
+export const mechadexTheme: CustomThemeConfig = {
+	name: 'mechadex-theme',
     properties: {
 		// =~= Theme Properties =~=
 		"--theme-font-family-base": `system-ui`,

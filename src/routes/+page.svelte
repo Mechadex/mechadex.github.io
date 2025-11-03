@@ -96,14 +96,14 @@
 	async function setupDataAndSearch() {
 		// Asynchronously fetch and load the search index
 		fetch(
-			`https://raw.githubusercontent.com/Mechdex/mechanics/refs/heads/main/static/search_index.json`
+			`https://raw.githubusercontent.com/Mechadex/mechanics/refs/heads/main/static/search_index.json`
 		)
 			.then((res) => res.json())
 			.then((indexJSON) => setSearchEngine(lunr.Index.load(indexJSON)))
 			.catch(console.error);
 
 		// Attempt to load mechanics from session cache, otherwise fetch from server
-		const cache = sessionStorage.getItem('_mechdex_concise_cache');
+		const cache = sessionStorage.getItem('_mechadex_concise_cache');
 		try {
 			if (cache) {
 				try {
@@ -345,7 +345,7 @@
 	>
 		<!-- Header -->
 		<header class="text-center">
-			<h1 class="h1 text-primary-500">Mechdex</h1>
+				<h1 class="h1 text-primary-500">Mechadex</h1>
 			<h5 class="h5">Building blocks for your games.</h5>
 		</header>
 

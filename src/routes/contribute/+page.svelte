@@ -5,7 +5,7 @@
 
 	// onMount(() => {
 	// 	if (!browser) return;
-	// 	window.location.href = 'https://github.com/Mechdex/mechanics/';
+	// 	window.location.href = 'https://github.com/Mechadex/mechanics/';
 	// });
 </script>
 
@@ -20,7 +20,7 @@
 	<article class="prose h-full w-full text-on-surface-token sm:pb-10">
 		<p>
 			All mechanics are stored in a GitHub repository <a
-				href="https://github.com/Mechdex/mechanics"
+				href="https://github.com/Mechadex/mechanics"
 				class="!text-on-surface-token"
 				><u class="!decoration-primary-500 !decoration-2 !underline-offset-2">here</u></a
 			>.
@@ -45,10 +45,10 @@
 			<li>First, create a Github account.</li>
 			<li>Then, <i>fork</i> the repository to your account. Make your changes and commit them.</li>
 			<li>
-				<a href="https://github.com/Mechdex/mechanics/compare" class="!text-on-surface-token"
-					><u class="!decoration-primary-500 !decoration-2 !underline-offset-2"
-						>Open a pull request</u
-					></a
+				<a href="https://github.com/Mechadex/mechanics/compare" class="!text-on-surface-token"
+						><u class="!decoration-primary-500 !decoration-2 !underline-offset-2"
+							>Open a pull request</u
+						></a
 				> on Github.
 			</li>
 			<li>Wait for me to merge your changes.</li>

@@ -35,7 +35,7 @@ export async function fetchMechanicFromServer(data: {
 
 	try {
 		const response = await fetch(
-			`https://raw.githubusercontent.com/Mechdex/mechanics/refs/heads/main/${data.category}/${data.symbol}/mechanic.yaml`
+			`https://raw.githubusercontent.com/Mechadex/mechanics/refs/heads/main/${data.category}/${data.symbol}/mechanic.yaml`
 		);
 		const responseText = await response.text();
 		const parsedMechanic = (yaml.load(responseText) as any).mechanic as Mechanic;
@@ -58,7 +58,7 @@ export async function fetchMechanicFromServer(data: {
 
 // 	for (let category of MECHANIC_CATEGORIES) {
 // 		_currentLoadingCategoryIndex.set(MECHANIC_CATEGORIES.indexOf(category));
-// 		const URL = `https://raw.githubusercontent.com/Mechdex/mechanics/refs/heads/main/${category}/index.json`;
+// 		const URL = `https://raw.githubusercontent.com/Mechadex/mechanics/refs/heads/main/${category}/index.json`;
 
 // 		try {
 // 			const response = await fetch(URL);
@@ -88,7 +88,7 @@ export async function fetchMechanicFromServer(data: {
 export async function populateConciseMechanics() {
 	try {
 		const response = await fetch(
-			`https://raw.githubusercontent.com/Mechdex/mechanics/refs/heads/main/static/concise_index.json`
+			`https://raw.githubusercontent.com/Mechadex/mechanics/refs/heads/main/static/concise_index.json`
 		);
 		const responseText = await response.json();
 		await new Promise((resolve, reject) => setTimeout(resolve, 400));

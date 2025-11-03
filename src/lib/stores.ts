@@ -25,7 +25,7 @@ export function gsap_xto(targets: gsap.TweenTarget, vars: gsap.TweenVars): gsap.
 
 export let conciseMechanics = writable<ConciseMechanic[]>([]);
 if (browser) {
-	let cache = sessionStorage.getItem('_mechdex_concise_cache');
+	let cache = sessionStorage.getItem('_mechadex_concise_cache');
 	if (cache) {
 		// console.log('Cache was found for concise mechanics.');
 		// console.log(cache);
@@ -41,22 +41,22 @@ export let _currentLoadingCategoryIndex = writable<number>();
 export let sidePanelState = writable<'full' | 'split' | 'hidden'>('hidden');
 conciseMechanics.subscribe((value) => {
 	if (browser) {
-		sessionStorage.setItem('_mechdex_concise_cache', JSON.stringify(value) || '[]');
+		sessionStorage.setItem('_mechadex_concise_cache', JSON.stringify(value) || '[]');
 	}
 });
 
 export let loadedMechanics = writable<Mechanic[]>([]);
 loadedMechanics.subscribe((value) => {
 	if (browser) {
-		sessionStorage.setItem('_mechdex_mechanic_cache', JSON.stringify(value));
+		sessionStorage.setItem('_mechadex_mechanic_cache', JSON.stringify(value));
 	}
 });
 
 export let screenType = writable<'sm' | 'md' | 'lg'>();
 export let gridLayoutType = writable<'compact' | 'normal'>('normal');
 if (browser) {
-	let storedMechanics = sessionStorage.getItem('_mechdex_mechanic_cache');
-	let storedConciseMechanics = sessionStorage.getItem('_mechdex_concise_cache');
+	let storedMechanics = sessionStorage.getItem('_mechadex_mechanic_cache');
+	let storedConciseMechanics = sessionStorage.getItem('_mechadex_concise_cache');
 
 	if (storedMechanics) {
 		loadedMechanics.set(JSON.parse(storedMechanics));

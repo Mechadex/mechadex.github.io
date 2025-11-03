@@ -76,7 +76,7 @@
 </script>
 
 <svelte:head>
-	<title>Game Mechanics | Mechdex</title>
+	<title>Game Mechanics | Mechadex</title>
 </svelte:head>
 <Modal width="w-[80%]" height="h-[80%]" />
 
