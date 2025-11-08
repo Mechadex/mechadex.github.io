@@ -129,7 +129,7 @@
 		<div>
 			<!-- svelte-ignore a11y_no_static_element_interactions -->
 			<!-- svelte-ignore a11y_mouse_events_have_key_events -->
-			<AppRail>
+			<AppRail class="overflow-x-hidden">
 				{#snippet lead()}
 					<div
 						class="contents"
@@ -193,9 +193,7 @@
 				{#snippet trail()}
 					<div class="text-sm/2 flex flex-col text-center leading-snug">
 						<p class="m-0">
-							Alpha<br />
-							<span class="text-primary-500">•</span> <br />
-							V0.0.1
+							V0.0.2-alpha
 						</p>
 					</div>
 				{/snippet}
