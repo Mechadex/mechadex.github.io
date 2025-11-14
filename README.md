@@ -2,6 +2,7 @@
 
 
 Mechadex is a prototype for an interactive database of common game mechanics, styled with a periodic table aesthetic.
+
 <img width="1600" height="805" alt="image" src="https://github.com/user-attachments/assets/efbea67f-0830-4ff9-859e-740447888541" />
 
 > [!NOTE]
@@ -17,9 +18,9 @@ Mechadex is a prototype for an interactive database of common game mechanics, st
 * Mechadex is very, to put it simply, scrappy. So the code behind it is far scrappier. There's also the fact that I'm a complete beginner to web development.
 
 ## How it works
-Mechadex fetches `build/concise_index.json` from the mechanics repository on page load. That contains basic info on every mechanic and is used to render the mechanic cards on the home page. 
+Mechadex fetches `static/concise_index.json` from the mechanics repository on page load. That contains basic info on every mechanic and is used to render the mechanic cards on the home page. 
 
-Searching must work for fields that aren't loaded initially, like the long Description, so Lunr builds a proper search index using Github Actions. This search index is also loaded on page load. Lunr.js takes over and allows searching to work.
+Searching must work for fields that aren't loaded initially, like the long Description, so Lunr builds a proper search index using Github Actions. This search index is also loaded on page load (`static/search_index.json`). Lunr.js takes over and allows searching to work.
 
 When a mechanic clicked, `[mechanic category]/[mechanic symbol]/mechanic.yaml` is loaded from the mechanics repository, and that contains all the info for that mechanic. This is cached in session storage so it doesn't have to be loaded again for that session. It doesn't use local storage because then cache invalidation becomes an issue and it takes less than a second to load a single YAML file on a decent internet connection.
 ## Using this locally
