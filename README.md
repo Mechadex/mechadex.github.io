@@ -54,3 +54,6 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+### Community Projects
+[O-Taha](https://github.com/O-Taha) built a tool that lets you enter a game design problem and genre and match it to game mechanics based on relevance using Q-Bert embeddings. [Check it out here.](https://github.com/O-Taha/AI-Game-Design-Chatbot)
