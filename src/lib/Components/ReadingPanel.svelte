@@ -63,6 +63,13 @@
 				</h3>
 				<p>{problem.description}</p>
 			{/each}
+			<h2>Drawbacks</h2>
+			{#each currentDisplayedMechanic.drawbacks as drawback}
+				<h3 class="h3 underline decoration-primary-500 decoration-2 underline-offset-2">
+					{drawback.title}
+				</h3>
+				<p>{drawback.description}</p>
+			{/each}
 			<h2>Examples</h2>
 			{#each currentDisplayedMechanic.examples as example}
 				<h3 class="h3 underline decoration-primary-500 decoration-2 underline-offset-2">

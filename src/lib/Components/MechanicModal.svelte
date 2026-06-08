@@ -80,6 +80,10 @@
 			<hr />
 
 			<p>{mechanic.solved_problems}</p>
+			<h2 class="h2 text-primary-500">Drawbacks of this Mechanic</h2>
+			<hr />
+
+			<p>{mechanic.drawbacks}</p>
 			<h2 class="h2 text-primary-500">Real-World Examples</h2>
 			<hr />
 			<ul class="marker:text-primary-500 text-on-surface-token">
