@@ -355,7 +355,7 @@
 				class="input flex-1 px-3"
 				bind:value={inputStage}
 				onkeydown={(e) => e.key === 'Enter' && refreshDisplayedMechanics()}
-				placeholder="Search for a mechanic's title, description, problems... (e.g. 'immersion in cutscenes')"
+				placeholder="Search for a mechanic's title, description, problems solved, or drawbacks... (e.g. 'immersion in cutscenes')"
 			/>
 			<button class="variant-filled-primary btn" onclick={refreshDisplayedMechanics}>
 				<SearchIcon style="font-size: 1.2rem;" />

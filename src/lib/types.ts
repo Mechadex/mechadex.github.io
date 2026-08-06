@@ -43,5 +43,6 @@ export interface Mechanic {
 	short_description: string;
 	long_description: string;
 	solved_problems: { title: string; description: string }[];
+	drawbacks: { title: string; description: string }[];
 	examples: { title: string; description: string }[];
 }
